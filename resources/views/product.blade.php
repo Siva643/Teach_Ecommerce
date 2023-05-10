@@ -134,8 +134,7 @@
               <div class="img">
                 <img class="card-img-top" style="position:relative;left:15px;top:50px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYTRAVEL/MAYART23/BUS_PC-QC-Brands._SY232_CB590890905_.jpg" alt="Card image cap">
                 <img class="card-img-top" style="position:relative;left:50px;top:50px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYTRAVEL/MAYART23/Essentials_PC-QC-Brands._SY232_CB590890905_.jpg" alt="Card image cap">
-               
-                </div>
+              </div>
           </div>
         </div>
           <div class="col-md-3 col-12">
@@ -145,13 +144,11 @@
                 <div class="img">
                   <img class="card-img-top" style="position:relative;left:15px;top:20px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/cross-site/1_2x_123wed._SY232_CB592066874_.jpg" alt="Card image cap">
                   <img class="card-img-top" style="position:relative;left:50px;top:20px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/cross-site/1_2x_qwerfgh._SY232_CB592066874_.jpg" alt="Card image cap">
-                 
                 </div>
                 <div class="img">
                   <img class="card-img-top" style="position:relative;left:15px;top:50px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/Launchpad/3PA-23/MayART/CL1._SY232_CB589318336_.jpg" alt="Card image cap">
                   <img class="card-img-top" style="position:relative;left:50px;top:50px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/Launchpad/3PA-23/MayART/CL2._SY232_CB589318336_.jpg" alt="Card image cap">
-                 
-                  </div>
+                </div>
             </div>
         </div>
         <div class="col-md-3 col-12">
@@ -166,8 +163,7 @@
               <div class="img">
                 <img class="card-img-top" style="position:relative;left:15px;top:50px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYTRAVEL/MAYART23/Train_PC-QC-Brands._SY232_CB590890905_.jpg" alt="Card image cap">
                 <img class="card-img-top" style="position:relative;left:50px;top:50px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/APAYTRAVEL/MAYART23/Flight_PC-QC-Brands._SY232_CB590890905_.jpg" alt="Card image cap">
-               
-                     </div>
+              </div>
           </div>
         </div>
         <div class="col-md-3 col-12">
@@ -197,7 +193,7 @@
 
 
 
-     <section id="product">
+     <!--<section id="product">
     <h1 class="text-center tex-muted h1 mt-3">Our Product</h1>
     <div class="container mt-4 p-3">
         <div class="row">
@@ -311,9 +307,23 @@
         </div>
 
    </div>
-</section>
-
-
+</section>-->
+      <section id="product">
+    <h1 class="text-center tex-muted h1 mt-3">Our Product</h1>
+    <div class="container mt-4 p-3">
+       <div class="row">
+     @foreach($products as $product)
+        <div class="col-6 col-md-3">
+        <div class="card carddesign">
+            <a href="detail"><img class="card-img-top" src="{{ asset('images/'.$product->image) }}" alt="Card image cap"></a>
+            <div class="card-body text-center">
+              <h5 class="card-title">{{$product['name']}}</h5>
+            </div>
+        </div>
+          </div>
+      @endforeach
+      </div>
+      </section>
 @endsection
 
 

@@ -53,10 +53,10 @@
             <a class="nav-link mx-2 text-uppercase" href="#"></i> Cart</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="#">Signin</a>
+            <a class="nav-link mx-2 text-uppercase" href="login">Signin</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="#"></i>Register</a>
+            <a class="nav-link mx-2 text-uppercase" href="register"></i>Register</a>
           </li>
         </ul>
       </div>

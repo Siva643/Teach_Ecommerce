@@ -28,7 +28,7 @@
    @yield('content')
   
    {{View::make('footer')}}
-  
+   
 
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
@@ -60,6 +60,7 @@
       object-fit:contain;
       margin-left:50px;
     }
+ 
  /* Navbar */
 
   .car{
@@ -106,12 +107,13 @@
   }
   .card-first{
     height:400px;
- 
     overflow: hidden;
     border:none;
+   }
+   .card-first h3{
+    letter-spacing: 1px;
    
-   
-  }
+   }
 
   .carddesign{
     width:220px;
