@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
-use App\Models\Product;
-use Illuminate\Http\Request;
-use Illuminate\Validation\Rules\Password;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Validator;
 use Session;
 use Redirect;
+use App\Models\User;
+use App\Models\Slider;
+use App\Models\Cart;
+use App\Models\Product;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Validation\Rules\Password;
 
 
 
@@ -19,11 +21,13 @@ class ProductController extends Controller
     {
         $data=Product::all();
         return view('product',['products'=>$data]);
+       
     }
     public function product()
     {
         return view('detail');
     }
+   
     public function register()
     {
         return view('register');
@@ -58,4 +62,44 @@ class ProductController extends Controller
         return redirect('/login');
     
     }
+    public function addToCart(Request $request)
+    {
+       // return "hello";
+       if($request->session()->has('user'))
+       {
+          //return "Hello";
+          $cart= new Cart;
+          $cart->user_id=$request->session()->get('user')['id'];
+          $cart->product_id=$request->product_id;
+          $cart->save();
+          return redirect('/');
+       }
+       else{
+           return redirect('login');
+       }
+    }
+    static function cartItem()
+    {
+        $userId=Session::get('user')['id'];
+        return Cart::where('user_id',$userId)->count();
+    }
+    public function search(Request $request)
+    {
+       //return $request->input();
+      //return  $data=Product::where('name','like', '%'.$request->input('query').'%')->get(  ); 
+      $data=Product::where('name','like', '%'.$request->input('query').'%')->get();
+      return view('search',['products'=>$data]); 
+    }
+    public function cartList()
+    {
+        $userId=Session::get('user')['id'];
+        $products=DB::table('cart')
+        ->join('products','cart.product_id','=','product.id')
+        ->where('cart.user_id',$userId)
+        ->select('products.*')
+        ->get();
+        return view('cartlist',['products'=>$products]);
+    }
+
+ 
 }

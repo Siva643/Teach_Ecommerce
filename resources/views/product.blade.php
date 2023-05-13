@@ -93,7 +93,8 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-     </section>
+        </section>
+
   
 
    
@@ -315,10 +316,12 @@
      @foreach($products as $product)
         <div class="col-6 col-md-3">
         <div class="card carddesign">
-            <a href="detail"><img class="card-img-top" src="{{ asset('images/'.$product->image) }}" alt="Card image cap"></a>
-            <div class="card-body text-center">
+            <a href="detail/{{$product['id']}}"><img class="card-img-top" src="{{ asset('images/'.$product->image) }}" alt="Card image cap">
+            </a>
+              <div class="card-body text-center">
               <h5 class="card-title">{{$product['name']}}</h5>
             </div>
+      
         </div>
           </div>
       @endforeach

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Slideradd;
 use App\Http\Controllers\productadd;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
@@ -22,6 +23,10 @@ use App\Http\Controllers\ProductController;
 Route::get('/login', function () {
     return view('login');
 });
+Route::get('/logout', function () {
+    Session::forget('user');
+    return redirect('login');
+});
 Route::post("loginpost",[UserController::class,'login']);
 Route::get("/",[ProductController::class,'index']);
 
@@ -43,7 +48,24 @@ Route::get('edit/{id}',[productadd::class,'edit']);
 Route::post('update/{id}',[productadd::class,'update']);
 Route::get('delete/{id}',[productadd::class,'delete']);
 
+Route::get('detail/{id}',[productadd::class,'detail']);
 
+/* Add Slider */
 
+Route::get('/slideradd',[Slideradd::class,'index']);
+Route::post('/createslider',[Slideradd::class,'create'])->name('createslider');
+Route::get('/readslider',[Slideradd::class,'read']);
+Route::get('editslider/{id}',[Slideradd::class,'edit']);
+Route::post('updateslider/{id}',[Slideradd::class,'update']);
+Route::get('deleteslider/{id}',[Slideradd::class,'delete']);
+
+/* cart */
+
+Route::post('/add_to_cart',[ProductController::class,'addToCart']);
+Route::get('cartlist',[ProductController::class,'cartList']);
+
+/* search */
+
+Route::get('search',[ProductController::class,'search']);
 
 

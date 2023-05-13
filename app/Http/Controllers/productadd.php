@@ -54,4 +54,9 @@ class productadd extends Controller
         $delete->delete();
         return redirect('read');
     }
+    public function detail($id)
+    {
+        $product= Product::find($id);
+        return view('detail',compact('product'));
+    }
 }

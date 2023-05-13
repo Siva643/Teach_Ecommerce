@@ -11,36 +11,31 @@
 </head>
 <body>
 {{View::make('header')}}
-
     <div class="container">
+  <a href="slideradd" class="btn btn-success mt-5 mb-1">Add Slider</a>
+
       <table class="table mt-5 mb-5">
        <tr>
            <th>ID</th>
-           <th>NAME</th>
-           <th>PRICE</th>
-           <th>CATEGORY</th>
-           <th>DESCRIPTION</th>
-           <th>GALLERY</th>
+           <th>IMAGE</th>
            <th>UPDATE</th>
            <th>DELETE</th>
        </tr>
        @foreach($reads as $read)
        <tr>
            <td>{{$read->id}}</td>
-           <td>{{$read->name}}</td>
-           <td>{{$read->price}}</td>
-           <td>{{$read->category}}</td>
-           <td>{{$read->description}}</td>
-           <td><img style="height:100px;width:100px;border-radius:50%;" src="{{ asset('images/'.$read->image) }}"></td>
+         
+           <td><img style="height:100px;width:100px;border-radius:50%;" src="{{ asset('image/'.$read->image) }}"></td>
            
-           <td><a href="{{ url('edit/'.$read->id) }}" class="btn btn-success"><i class="bi bi-pencil-square"></i></a></td>
-           <td><a href="{{ url('delete/'.$read->id) }}" class="btn btn-danger"><i class="bi bi-trash3"></i></a></td>
+           <td><a href="{{ url('editslider/'.$read->id) }}" class="btn btn-success"><i class="bi bi-pencil-square"></i></a></td>
+           <td><a href="{{ url('deleteslider/'.$read->id) }}" class="btn btn-danger"><i class="bi bi-trash3"></i></a></td>
 
        </tr>
        @endforeach
       </table>
     </div>
-{{View::make('footer')}}
-
+   
+     {{View::make('footer')}}
+  
 </body>
 </html>
