@@ -39,25 +39,25 @@
               <h6 class="text-center fw-bold mt-3">iphone <i class="bi bi-check2-circle"></i></h6>
            </div>
            <div class="col-4  col-md-2">
-            <img src="https://sivamyp.000webhostapp.com/admin_area/product_images/applemobile.jpg">
-            <h6 class="text-center fw-bold mt-3">iphone <i class="bi bi-check2-circle"></i></h6>
+            <img src="https://m.media-amazon.com/images/I/712mZ6RXCQL._AC_UY327_FMwebp_QL65_.jpg">
+            <h6 class="text-center fw-bold mt-3">laptop <i class="bi bi-check2-circle"></i></h6>
          </div>
          <div class="col-4 col-md-2">
-          <img src="https://sivamyp.000webhostapp.com/admin_area/product_images/applemobile.jpg">
-          <h6 class="text-center fw-bold mt-3">iphone <i class="bi bi-check2-circle"></i></h6>
+          <img src="https://m.media-amazon.com/images/I/61frbhrSPPL._AC_UL600_FMwebp_QL65_.jpg">
+          <h6 class="text-center fw-bold mt-3">watch <i class="bi bi-check2-circle"></i></h6>
        </div>
        <div class="col-4  col-md-2">
-        <img src="https://sivamyp.000webhostapp.com/admin_area/product_images/applemobile.jpg">
-        <h6 class="text-center fw-bold mt-3">iphone <i class="bi bi-check2-circle"></i></h6>
+        <img src="https://m.media-amazon.com/images/I/61k-h8Q2C1L._UX569_.jpg">
+        <h6 class="text-center fw-bold mt-3">cloth <i class="bi bi-check2-circle"></i></h6>
      </div>
            <div class="col-4  col-md-2">
-            <img src="https://sivamyp.000webhostapp.com/admin_area/product_images/applemobile.jpg">
-            <h6 class="text-center fw-bold mt-3">iphone <i class="bi bi-check2-circle"></i></h6>
+            <img src="https://m.media-amazon.com/images/I/81zpIs8mEgL._AC_UY327_FMwebp_QL65_.jpg">
+            <h6 class="text-center fw-bold mt-3">computer <i class="bi bi-check2-circle"></i></h6>
             
          </div>
               <div class="col-4  col-md-2">
-              <img src="https://sivamyp.000webhostapp.com/admin_area/product_images/applemobile.jpg">
-              <h6 class="text-center fw-bold mt-3">iphone <i class="bi bi-check2-circle"></i></h6>
+              <img src="https://m.media-amazon.com/images/I/610fN3RyKFL._AC_UL600_FMwebp_QL65_.jpg">
+              <h6 class="text-center fw-bold mt-3">shoes <i class="bi bi-check2-circle"></i></h6>
               
               </div>
            </div>
@@ -66,7 +66,7 @@
 
 
      <section id="carousel">
-        <div id="carouselExampleIndicators" class="carousel slide car mt-4" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide car" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
@@ -98,33 +98,33 @@
   
 
    
-  <section class="sectiontwo mt-5">
+  <section class="sectiontwo" style="margin-top:100px;">
       <div class="container owl-carousel owl-theme">
         <div class="item">
-         <img src="https://source.unsplash.com/weekly?water">
+         <img src="https://m.media-amazon.com/images/I/61Me9BVlGNL._AC_UL600_FMwebp_QL65_.jpg">
         </div>
         <div class="item">
-         <img src="https://source.unsplash.com/weekly?water">
+         <img src="https://m.media-amazon.com/images/I/613SAOPmLeL._AC_SY400_.jpg">
         </div>
         <div class="item">
-         <img src="https://source.unsplash.com/weekly?water">
+         <img src="https://m.media-amazon.com/images/I/61whl+GwjiL._AC_SY400_.jpg">
         </div>
         <div class="item">
-         <img src="https://source.unsplash.com/weekly?water">
+         <img src="https://m.media-amazon.com/images/I/51fMwaNRSJL._AC_SY350_.jpg">
         </div>
         <div class="item">
-         <img src="https://source.unsplash.com/weekly?water">
+         <img src="https://m.media-amazon.com/images/I/61C8hl-ZMfL._AC_UL600_FMwebp_QL65_.jpg">
         </div>
         <div class="item">
-         <img src="https://source.unsplash.com/weekly?water">
+         <img src="https://m.media-amazon.com/images/I/51w+v4Bq+pL._AC_SY400_.jpg">
         </div>
        </div>
     </section>
 
 
-    <section class="m-4">
+    <!--<section class="section3" style="margin-top:70px;">
       <div class="row">
-        <div class="col-md-3 col-12">
+        <div class="col-md-3  col-sm-6">
           <div class="card card-first" style="width: 18rem;">
             <h3 class="fw-bold mt-4 text-center" style="font-size:20px;">Starting ₹79 | Home, 
               <br>kitchen & more</h3>
@@ -138,7 +138,7 @@
               </div>
           </div>
         </div>
-          <div class="col-md-3 col-12">
+          <div class="col-md-3 col-sm-6">
             <div class="card card-first" style="width: 18rem;">
               <h3 class="fw-bold mt-4 text-center" style="font-size:20px;">Starting ₹79 | Home, 
                 <br>kitchen & more</h3>
@@ -152,7 +152,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 col-12">
+        <div class="col-md-3 col-sm-6">
           <div class="card card-first" style="width: 18rem;">
             <h3 class="fw-bold mt-4 text-center" style="font-size:20px;">Starting ₹79 | Home, 
               <br>kitchen & more</h3>
@@ -167,7 +167,7 @@
               </div>
           </div>
         </div>
-        <div class="col-md-3 col-12">
+        <div class="col-md-3 col-sm-6">
           <div class="card card-first" style="width: 18rem;">
             <h3 class="fw-bold mt-4 text-center" style="font-size:20px;">Starting ₹79 | Home, 
               <br>kitchen & more</h3>
@@ -190,7 +190,7 @@
       </div>
      
     </div>
-    </section>
+    </section>-->
 
 
 
@@ -309,14 +309,14 @@
 
    </div>
 </section>-->
-      <section id="product">
+      <section id="product mt-5">
     <h1 class="text-center tex-muted h1 mt-3">Our Product</h1>
     <div class="container mt-4 p-3">
        <div class="row">
      @foreach($products as $product)
         <div class="col-6 col-md-3">
         <div class="card carddesign">
-            <a href="detail/{{$product['id']}}"><img class="card-img-top" src="{{ asset('images/'.$product->image) }}" alt="Card image cap">
+            <a href="detail/{{$product['id']}}"><img class="card-img-top mt-4"  src="{{ asset('images/'.$product->image) }}" alt="Card image cap">
             </a>
               <div class="card-body text-center">
               <h5 class="card-title">{{$product['name']}}</h5>

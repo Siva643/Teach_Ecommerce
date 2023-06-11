@@ -31,7 +31,7 @@ Route::post("loginpost",[UserController::class,'login']);
 Route::get("/",[ProductController::class,'index']);
 
 Route::get('detail',[ProductController::class,'product']);
-Route::get('register',[ProductController::class,'register']);
+Route::get('register',[ProductController::class,'register']); 
 //Route::view('/register','register');
 //Route::view('/login','login');
 
@@ -67,5 +67,16 @@ Route::get('cartlist',[ProductController::class,'cartList']);
 /* search */
 
 Route::get('search',[ProductController::class,'search']);
+
+/* Remove cart */
+
+Route::get('/removecart/{id}',[ProductController::class,'removeCart']);
+
+/* Order now */
+
+Route::get('/ordernow',[ProductController::class,'orderNow']);
+Route::post('/orderplace',[ProductController::class,'orderPlace']);
+Route::get('/myorders',[ProductController::class,'myOrders']);
+
 
 

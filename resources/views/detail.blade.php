@@ -12,16 +12,18 @@
        <div class="col-sm-6 col-md-6 col-2">
           <a href="/">Go back</a>
           <h4 class="mt-5 fw-bold">{{$product->name}}<h4>
-          <h6>Price: {{$product->price}}</h6>
-          <h6>Category: {{$product->category}}<h6>
+          <h6 class="text-success fw-bold">Price: {{$product->price}} INR</h6>
+         
           <h6>Description: {{$product->description}}<h6>
           <div class="mt-5">
            <form action="/add_to_cart" method="post">
             @csrf
             <input type="hidden" name="product_id" value={{$product->id}}>
             <button class="btn" style="background-color:blue;color:white">Add to card</button>
-          <button class="btn btn-success" style="color:white;">Buy Now</button>
-          </form>
+          <a href="ordernow" class="btn btn-success" style="color:white;">Buy Now</a>
+           
+        </form>
+
           </div>
     </div>
     </div>

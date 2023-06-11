@@ -57,14 +57,14 @@
             <a class="nav-link mx-2 text-uppercase" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="#">Orders</a>
+            <a class="nav-link mx-2 text-uppercase" href="/myorders">Orders</a>
           </li>
          
           
         </ul>
         <ul class="navbar-nav ms-auto ">
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="#"></i>Cart({{$total}})</a>
+            <a class="nav-link mx-2 text-uppercase" href="/cartlist"></i>Cart({{$total}})</a>
           </li>
           @if(Session::has('user'))
           <li class="nav-item dropdown">

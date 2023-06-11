@@ -48,7 +48,7 @@
     padding:0;
     }
   body{
-    background:rgb(244, 241, 241);
+    background:rgb(255, 255, 255);
     font-family: 'Poppins', sans-serif;
     }
   .firstsection{
@@ -60,6 +60,7 @@
       object-fit:contain;
       margin-left:50px;
     }
+   
  
  /* Navbar */
 
@@ -84,7 +85,7 @@
         }
 }
   #product{
-    background:#e5e5e5; 
+    background:#ffffff; 
   }
   #product h1{
     font-size:50px;
@@ -119,8 +120,8 @@
     width:220px;
     height:230px;
     border:none;
-    box-shadow: 15px 20px 20px rgb(150, 147, 147),
-               inset 4px 4px 10px white;
+    box-shadow: 15px 20px 20px rgb(240, 238, 238),
+               inset 4px 4px 10px rgb(239, 237, 237);
     border-radius:10px;
     overflow:hidden;
     justify-content: center;
@@ -129,8 +130,8 @@
     padding:20px;
   }
   .carddesign:hover{
-    box-shadow: 15px 20px 20px gray,
-               inset 1px 1px 5px gray;
+    box-shadow: 15px 20px 20px white,
+               inset 1px 1px 5px white;
     transition: 0.3s;
   }
   @media screen and (max-width:576px){
@@ -166,10 +167,23 @@
   .sectiontwo img{
     width:300px;
     height:200px;
+    object-fit:contain;
   }
+  .card-first{
+    border:1px solid rgb(209, 205, 205);
+  }
+  @media screen and (max-width:576px){
+     .card-first{
+      width:100px;
+      height:250px;
+     
+      border:none !important;
+     
+     }
+  }
+  
   .detail-img{
-    box-shadow:10px 10px 20px rgb(214, 212, 212),
-               -10px -10px 20px rgb(214, 212, 212);
+
     height:60vh;
     display:flex;
     justify-content: center;
