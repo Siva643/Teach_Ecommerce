@@ -93,8 +93,8 @@
     font-weight:bold
   }
   #product img{
-    width:130px;
-    height:130px;
+    width:100px;
+    height:100px;
     object-fit:contain;
     margin:15px;
     

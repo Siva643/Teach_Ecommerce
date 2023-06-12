@@ -54,7 +54,7 @@
         <ul class="navbar-nav ms-auto ">
          
           <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="#">Home</a>
+            <a class="nav-link mx-2 text-uppercase" href="/">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-2 text-uppercase" href="/myorders">Orders</a>
@@ -66,9 +66,12 @@
           <li class="nav-item">
             <a class="nav-link mx-2 text-uppercase" href="/cartlist"></i>Cart({{$total}})</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link mx-2 text-uppercase" href="register"></i>Register</a>
+          </li>
           @if(Session::has('user'))
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{Session::get('user')['name']}}
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -81,9 +84,7 @@
             <a class="nav-link mx-2 text-uppercase" href="login">Signin</a>
           </li>
           @endif
-          <li class="nav-item">
-            <a class="nav-link mx-2 text-uppercase" href="register"></i>Register</a>
-          </li>
+        
        
         </ul>
       </div>

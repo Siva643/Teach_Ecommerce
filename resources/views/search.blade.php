@@ -13,27 +13,32 @@
 
   <section id="product">
     <h1 class="text-center tex-muted h1 mt-3">Our Product</h1>
-    <div class="container mt-4 p-3">
-        <h3>Results</h3>
-       <div class="row">
+    <div class="container mt-4">
+        <h3 class="text-success">Results</h3>
      @foreach($products as $product)
-        <div class="col-6 col-md-6">
-        <div class="">
-            <a href="detail/{{$product['id']}}"><img class="card-img-top" src="{{ asset('images/'.$product->image) }}" alt="Card image cap">
+
+       <div class="row">
+        <div class="col-md-3">
+
+            <a href="detail/{{$product['id']}}"><img class="card-img-top" style="width:200px;height:200px;object-fit:contain;" src="{{ asset('images/'.$product->image) }}" alt="Card image cap">
             </a>
-        </div>
+        
          </div>
-        <div class="col-6 col-md-6 mt-5">
-         <div>
-              <div class="card-body text-center">
-              <h5 class="card-title fw-bold mt-5">{{$product['description']}}</h5>
-              <h5 class="card-title mt-3 text-success">{{$product['price']}}</h5>
+        <div class="col-md-6">
+         
+              <div class="card-body">
+              <h5 class="card-title text-muted mt-5">{{$product['description']}}</h5>
+              <h5 class="card-title mt-3 text-success">{{$product['price']}} INR</h5>
+              </div>
         </div>
         </div>
-        </div>
-        </div>
-          </div>
-      @endforeach
+
+        @endforeach
+      
+
+
+    
+
       </div>
       </section>
 

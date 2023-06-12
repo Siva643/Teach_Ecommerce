@@ -316,7 +316,7 @@
      @foreach($products as $product)
         <div class="col-6 col-md-3">
         <div class="card carddesign">
-            <a href="detail/{{$product['id']}}"><img class="card-img-top mt-4"  src="{{ asset('images/'.$product->image) }}" alt="Card image cap">
+            <a href="detail/{{$product['id']}}"><img style="width:120px;height:120px;object-fit:contain;" class="card-img-top mt-4"  src="{{ asset('images/'.$product->image) }}" alt="Card image cap">
             </a>
               <div class="card-body text-center">
               <h5 class="card-title">{{$product['name']}}</h5>
